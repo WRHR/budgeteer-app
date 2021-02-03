@@ -4,7 +4,9 @@ import { Formik, Form } from "formik";
 import { InputField } from "../components/InputField";
 import { Box, Button } from "@chakra-ui/react";
 interface registerProps {}
-
+// apollo/gql mutations 
+// submit form
+// logo
 export const register: React.FC<registerProps> = ({}) => {
   return (
     <Wrapper variant="small">

@@ -5,7 +5,9 @@ import { Form, Formik } from "formik";
 import { InputField } from "../components/InputField";
 import { Box, Button, Heading } from "@chakra-ui/react";
 interface loginProps {}
-
+// apollo/gql mutations 
+// submit form
+// logo
 export const login: React.FC<loginProps> = ({}) => {
   // const router = useRouter();
   return (
