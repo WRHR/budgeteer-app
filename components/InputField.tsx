@@ -20,7 +20,7 @@ export const InputField: React.FC<InputFieldProps> = ({
   size: _,
   ...props
 }) => {
-  let InputOrArea = Input;
+  let InputOrArea:any = Input;
   if (textarea) {
     InputOrArea = Textarea;
   }

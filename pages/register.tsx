@@ -1,34 +1,34 @@
 import React from "react";
-import { useRouter } from "next/router";
 import { Wrapper } from "../components/Wrapper";
-import { Form, Formik } from "formik";
+import { Formik, Form } from "formik";
 import { InputField } from "../components/InputField";
-import { Box, Button, Heading } from "@chakra-ui/react";
-interface loginProps {}
+import { Box, Button } from "@chakra-ui/react";
+interface registerProps {}
 
-export const login: React.FC<loginProps> = ({}) => {
-  // const router = useRouter();
+export const register: React.FC<registerProps> = ({}) => {
   return (
     <Wrapper variant="small">
-      <Heading>Welcome Budgeteer!</Heading>
       <Formik
-        initialValues={{ usernameOrEmail: "", password: "" }}
+        initialValues={{ username: "", password: "", email: "" }}
         onSubmit={async (values, { setErrors }) => {
-          await console.log(values);
+          console.log(values);
         }}
       >
         {({ isSubmitting }) => (
           <Form>
             <InputField
-              name="usernameOrEmail"
-              placeholder="Username or Email"
-              label="Username or Email"
+              name="username"
+              placeholder="Username"
+              label="username"
             />
+            <Box mt={4}>
+              <InputField name="email" placeholder="Email" label="email" />
+            </Box>
             <Box mt={4}>
               <InputField
                 name="password"
-                placeholder="password"
-                label="Password"
+                placeholder="Password"
+                label="password"
                 type="password"
               />
             </Box>
@@ -38,7 +38,7 @@ export const login: React.FC<loginProps> = ({}) => {
               isLoading={isSubmitting}
               colorScheme="teal"
             >
-              Login
+              Register
             </Button>
           </Form>
         )}
@@ -47,4 +47,4 @@ export const login: React.FC<loginProps> = ({}) => {
   );
 };
 
-export default login;
+export default register;
