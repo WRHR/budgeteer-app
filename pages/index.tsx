@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import { NavBar } from "../components/NavBar";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   // check for user
@@ -7,10 +8,10 @@ export default function Home() {
   //add income
   //add expense
   //clickable charts (pie break down by category)
-  
 
   return (
     <>
+      <NavBar />
     </>
-  )
+  );
 }
