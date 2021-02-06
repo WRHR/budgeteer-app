@@ -8,7 +8,7 @@ export default function Home() {
   //add income
   //add expense
   //clickable charts (pie break down by category)
-
+  // Display onboarding/welcome or homepage
   return (
     <>
       <NavBar />
