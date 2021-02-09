@@ -1,4 +1,4 @@
-import Head from "next/head";
+import { Box, Heading } from "@chakra-ui/react";
 import { NavBar } from "../components/NavBar";
 import styles from "../styles/Home.module.css";
 
@@ -12,7 +12,13 @@ export default function Home() {
     <>
       <NavBar />
       {/* hero/info or user page */}
-
+      <Box>
+        <Heading>Manage your money</Heading>
+        {/* pic */}
+        {/* call to act */}
+        {/* about graphics */}
+        
+      </Box>
     </>
   );
 }
