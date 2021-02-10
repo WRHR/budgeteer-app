@@ -8,6 +8,10 @@ export default function Home() {
   //add income
   //add expense
   //clickable charts (pie break down by category)
+  // sidebar nav?
+  // alerts? (over budget, spending increase from previous months, suggestions ->savings, invest)
+  // overview
+
   return (
     <>
       <NavBar />
@@ -17,6 +21,8 @@ export default function Home() {
         {/* pic */}
         {/* call to act */}
         {/* about graphics */}
+        {/* about */}
+        {/* benefits */}
         
       </Box>
     </>
