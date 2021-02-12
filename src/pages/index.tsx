@@ -1,5 +1,6 @@
 import { Box, Heading } from "@chakra-ui/react";
 import { NavBar } from "../components/NavBar";
+import NextLink from 'next/link'
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -23,7 +24,8 @@ export default function Home() {
         {/* about graphics */}
         {/* about */}
         {/* benefits */}
-        
+        <NextLink href='/income'>Income</NextLink>
+        <NextLink href='/expense'>Expense</NextLink>
       </Box>
     </>
   );
