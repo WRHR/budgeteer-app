@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
+import { NavBar } from "../components/NavBar";
 
-interface expenseProps {
-
-}
+interface expenseProps {}
 
 export const expense: React.FC<expenseProps> = ({}) => {
-    return (
-      <>
-      </>
-    );
-
-}
+  return (
+    <>
+      <NavBar />
+    </>
+  );
+};
