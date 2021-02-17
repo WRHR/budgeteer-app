@@ -1,0 +1,8 @@
+mutation createIncome(options:options){
+  income {
+    id
+    amount 
+    category
+    occurance
+  }
+}
