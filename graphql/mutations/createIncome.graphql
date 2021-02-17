@@ -1,5 +1,5 @@
-mutation createIncome(options:options){
-  income {
+mutation CreateIncome($options:IncomeOptions!){
+  createIncome(options:$options) {
     id
     amount 
     category

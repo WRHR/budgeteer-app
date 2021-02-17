@@ -1,7 +1,7 @@
-mutation CreateExpense($options: ){
-  createExpense(options:$options){
+mutation CreateExpense($options: ExpenseOptions!) {
+  createExpense(options: $options) {
     id
-    amount 
+    amount
     category
     occurance
   }
