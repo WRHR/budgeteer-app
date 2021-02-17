@@ -1,0 +1,3 @@
+mutation DeleteIncome($id:Int!){
+  deleteIncome(id:$id)
+}

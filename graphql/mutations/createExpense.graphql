@@ -1,0 +1,8 @@
+mutation CreateExpense($options: ){
+  createExpense(options:$options){
+    id
+    amount 
+    category
+    occurance
+  }
+}
