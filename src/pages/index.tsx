@@ -1,8 +1,10 @@
+import { useState } from 'react'
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import { NavBar } from "../components/NavBar";
 import NextLink from "next/link";
 
 export default function Home() {
+  const [user, setUser] = useState(null)
   // check for user
   // display user budget info (income/expenses)
   //add income
