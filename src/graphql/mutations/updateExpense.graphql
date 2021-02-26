@@ -1,4 +1,4 @@
-mutation updateExpense($id:Int!, $options:options){
+mutation updateExpense($id:Int!, $options:ExpenseOptions){
   income {
     id 
     amount
