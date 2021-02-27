@@ -1,5 +1,5 @@
-mutation updateExpense($id: Int!, $options: ExpenseOptions) {
-  updateIncome(id: $id, options: $options) {
+mutation updateExpense($id: Int!, $options: ExpenseOptions!) {
+  updateExpense(id: $id, options: $options) {
     id
     amount
     category

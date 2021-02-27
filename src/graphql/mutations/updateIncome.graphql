@@ -1,4 +1,4 @@
-mutation updateIncome($id: Int!, $options: IncomeOptions) {
+mutation updateIncome($id: Int!, $options: IncomeOptions!) {
   updateIncome(id: $id, options: $options) {
     id
     amount
