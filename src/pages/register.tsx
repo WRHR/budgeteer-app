@@ -3,11 +3,14 @@ import { Wrapper } from "../components/Wrapper";
 import { Formik, Form } from "formik";
 import { InputField } from "../components/InputField";
 import { Box, Button } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 interface registerProps {}
 // apollo/gql mutations 
 // submit form
 // logo
 export const register: React.FC<registerProps> = ({}) => {
+  const router = useRouter()
+  // const [register] = 
   return (
     <Wrapper variant="small">
       <Formik
