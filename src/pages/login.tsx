@@ -4,7 +4,7 @@ import { Wrapper } from "../components/Wrapper";
 import { Form, Formik } from "formik";
 import { InputField } from "../components/InputField";
 import { Box, Button, Heading } from "@chakra-ui/react";
-import { MeDocument, useLoginMutation } from "../generated/graphql";
+import { MeDocument, useLoginMutation, MeQuery } from "../generated/graphql";
 interface loginProps {}
 // apollo/gql mutations
 // submit form
