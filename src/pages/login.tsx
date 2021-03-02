@@ -6,9 +6,7 @@ import { InputField } from "../components/InputField";
 import { Box, Button, Heading } from "@chakra-ui/react";
 import { MeDocument, useLoginMutation, MeQuery } from "../generated/graphql";
 interface loginProps {}
-// apollo/gql mutations
-// submit form
-// logo
+
 export const login: React.FC<loginProps> = ({}) => {
   const router = useRouter();
   const [login] = useLoginMutation();
